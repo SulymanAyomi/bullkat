@@ -719,6 +719,11 @@ nav .fly-item,
     background-color: var(--secondary-dark-color);
     padding: 1.5em 0;
     color: var(--white-color);
+    text-align: center;
+}
+
+.header-main .wrapper {
+    text-align: center;
 }
 
 .dpt-cat {

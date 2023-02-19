@@ -15,6 +15,8 @@
     --light-text-color: #7c899a;
     --border-color: #e5e8ec;
     --dark-color: #0a021c;
+    --bg-color: #050706;
+    --text-main-color: #fdc200;
 
     --font-small: 13px;
     --font-smaller: 11px;
@@ -45,12 +47,12 @@
 }
 
 body {
-    font-weight: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--dark-color);
-    background-color: var(--white-color);
+    color: var(--white-color);
+    background-color: var(--bg-color);
 }
 
 a {
@@ -272,7 +274,7 @@ h4 {
 }
 
 .info h2 {
-    color: #25f12d;
+    color: var(--text-main-color);
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-size: 1.5em;
@@ -337,7 +339,7 @@ h4 {
 }
 
 .creator .left h2 {
-    color: #25f12d;
+    color: var(--text-main-color);
     font-size: 30px;
     font-weight: var(--fw7);
     text-transform: uppercase;
@@ -349,8 +351,8 @@ h4 {
     max-width: 800px;
     max-height: 700px;
     position: relative;
-    background-color: #25f12d;
-    color: var(--white-color);
+    background-color: #ff9635;
+    color: var(--dark-color);
     margin: 0 auto;
     z-index: 20;
     padding: 2em;
@@ -373,7 +375,7 @@ h4 {
 }
 
 .main-div p {
-    color: #FEF6E6;
+    color: var(--dark-color);
     letter-spacing: 0.2rem;
     font-family: "Roboto-Regular";
     font-weight: normal;
@@ -420,7 +422,7 @@ h4 {
 }
 
 .donation .row h2 {
-    color: #25f12d;
+    color: var(--text-main-color);
     font-size: 14px;
     font-weight: var(--fw7);
     text-transform: uppercase;
@@ -457,7 +459,7 @@ h4 {
 }
 
 .roadmap h4 {
-    color: #25f12d;
+    color: var(--white-color);
     font-size: 36px;
     font-weight: var(--fw7);
     text-transform: uppercase;
@@ -466,7 +468,7 @@ h4 {
 }
 
 .roadmap .item h4 {
-    color: #ffa500;
+    color: var(--white-color);
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -523,7 +525,7 @@ h4 {
 }
 
 .header-top .main-links {
-    color: blue;
+    color: var(--light-text-color);
 }
 
 .header-top .main-links i {
@@ -627,10 +629,10 @@ h4 {
     width: 50px;
     height: 51px;
     border-radius: var(--percent50);
-    bottom: 7px;
-    right: 2px;
+    bottom: -2px;
+    right: 0px;
     opacity: 4;
-    border: solid 3px #26f12c;
+    border: solid 3px #fdc300;
 
 }
 
@@ -661,7 +663,7 @@ h4 {
 .header-nav nav>ul {
     line-height: 20px;
     gap: 20px;
-    color: #000000;
+    color: var(--white-color);
     font-weight: var(--fw6);
 }
 
@@ -988,20 +990,17 @@ form.search button:hover {
 }
 
 .slider h4 {
-    width: fit-content;
-    border-radius: 4px;
-    color: #25f12d;
-    letter-spacing: 1em;
+    color: var(--white-color);
 
 }
 
 .text-content :where(h2, h3) span:first-child {
     font-weight: var(--fw3);
-    color: var(--light-text-color);
+    color: var(--white-color);
 }
 
 .text-content :where(h2, h3) span:last-child {
-    color: var(--secondary-dark-color);
+    color: var(--text-main-color);
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -2692,6 +2691,11 @@ input[type='range']::-webkit-slider-thumb {
         height: 160px;
     }
 
+    .slider h4 {
+        color: var(--white-color);
+        font-size: 0.5em;
+    }
+
 }
 
 @media screen and (max-width:639px) {
@@ -2724,6 +2728,17 @@ input[type='range']::-webkit-slider-thumb {
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .donation .wallet span {
+        color: white;
+        background: #ffa500;
+        padding: 8px 25px;
+        font-size: 8px;
+        border-radius: 4px;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
     }
 }
 
@@ -2802,8 +2817,8 @@ input[type='range']::-webkit-slider-thumb {
         max-width: 800px;
         max-height: 700px;
         position: relative;
-        background-color: #25f12d;
-        color: var(--white-color);
+        background-color: #ff9635;
+        color: var(--dark-color);
         width: 50%;
         margin: 0 auto;
         z-index: 20;
